@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Discord Channel Opener</title>
+</head>
+<body>
+  <h2>Open Discord Channel</h2>
+  <label for="input1">Channel ID:</label><br>
+  <input type="text" id="input1" placeholder="Enter first value"><br><br>
+
+  <label for="input2">Message ID:</label><br>
+  <input type="text" id="input2" placeholder="Enter second value"><br><br>
+
+  <button onclick="openDiscord()">Open Discord Channel</button>
+
+  <script>
+    function openDiscord() {
+      const input1 = document.getElementById("input1").value.trim();
+      const input2 = document.getElementById("input2").value.trim();
+
+      if (!input1 || !input2) {
+        alert("Please enter both inputs.");
+        return;
+      }
+
+      const url = `https://discord.com/channels/@me/${input1}/${input2}`;
+      window.open(url, "_blank");
+    }
+  </script>
+</body>
+</html>

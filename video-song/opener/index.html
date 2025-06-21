@@ -29,7 +29,13 @@
   <input type="text" id="mediaLink" placeholder="Paste your link here..." />
   <button onclick="embedMedia()">Add Video/Song</button> 
   <div id="embedArea"></div>
-
+  <button onclick="back()" >Back</button>
+  <script>
+    function back() {
+      var url=`djpartyepic.github.io/tools`;
+      window.open(url, "_blank")
+    }
+  </script>
   <script>
     function embedMedia() {
       const url = document.getElementById("mediaLink").value.trim();

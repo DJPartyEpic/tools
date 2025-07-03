@@ -1,10 +1,11 @@
 <input id="text" name="text">
 <button onclick="hi()">Verify</button>
+
 <script>
 function hi() {
   var txt = document.getElementById('text').value;
   // Encode the input to replace spaces and other unsafe characters
   var encodedTxt = encodeURIComponent(txt);
-  window.open("djpartyepic.github.io/tools/djlas#" + encodedTxt, "_blank");
+  window.open("https://djpartyepic.github.io/tools/djlas#" + encodedTxt, "_blank");
 }
 </script>

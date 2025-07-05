@@ -11,9 +11,6 @@
   // Update every second
   setInterval(function () {
     var txt2 = window.location.hash.substring(1);
-    if ("".indexOf(txt2)) {
-      var decodedTxt = "<meta http-equiv="refresh" content="0; url=https://djpartyepic.github.io/tools/djlas#DJLas" /></meta>";
-    }
     var decodedTxt = decodeURIComponent(txt2); // replace %20 with space, etc.
     document.getElementById("text2").innerHTML = "<h3>" + escapeHTML(decodedTxt) + "</h3>";
   }, 1000);
